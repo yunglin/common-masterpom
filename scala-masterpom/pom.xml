@@ -14,8 +14,9 @@
     <relativePath>../pom.xml</relativePath>
   </parent>
   <properties>
-    <version.scala>2.10.0-RC1</version.scala>
-    <version.maven.scala>3.1.0</version.maven.scala>
+    <version.scala>2.10.0</version.scala>
+    <version.scala.lib>2.10</version.scala.lib>
+    <version.maven.scala>3.1.2</version.maven.scala>
     <version.maven.scalariform>0.1.2</version.maven.scalariform>
     <version.maven.scalastyle>0.2.0</version.maven.scalastyle>
     <version.scct>0.2-SNAPSHOT</version.scct>
@@ -127,7 +128,7 @@
       <dependencies>
         <dependency>
           <groupId>reaktor</groupId>
-          <artifactId>scct_${version.scala}</artifactId>
+          <artifactId>scct_${version.scala.lib}</artifactId>
           <version>${version.scct}</version>
         </dependency>
       </dependencies>
