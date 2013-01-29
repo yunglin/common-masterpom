@@ -109,6 +109,8 @@
         <version>${version.maven.surefire}</version>
         <configuration>
           <includes>
+            <include>**/*Test.scala</include>
+            <include>**/*Test.java</include>
             <include>**/*Spec.scala</include>
             <include>**/*Spec.java</include>
           </includes>
@@ -140,6 +142,8 @@
             <version>${version.maven.surefire}</version>
             <configuration>
               <includes>
+                <include>**/*Test.scala</include>
+                <include>**/*Test.java</include>
                 <include>**/*Spec.scala</include>
                 <include>**/*Spec.java</include>
               </includes>
