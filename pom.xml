@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>tw.hyl.common</groupId>
   <artifactId>masterpom</artifactId>
-  <version>1.0.1-SNAPSHOT</version>
+  <version>1.0.1</version>
   <packaging>pom</packaging>
   <name>masterpom</name>
   <description>Common dependency versions and settings.</description>
@@ -24,7 +24,7 @@
   <scm>
     <developerConnection>scm:git:git@github.com:yunglin/common-masterpom.git</developerConnection>
     <url>http://github.com/yunglin/common-masterpom</url>
-    <tag>HEAD</tag>
+    <tag>masterpom-1.0.1</tag>
   </scm>
   <developers>
     <developer>
