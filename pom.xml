@@ -23,7 +23,7 @@
     <module>scala-masterpom</module>
   </modules>
   <scm>
-    <developerConnection>scm:git:git://github.com/yunglin/common-masterpom.git</developerConnection>
+    <developerConnection>scm:git:git@github.com:yunglin/common-masterpom.git</developerConnection>
     <url>http://github.com/yunglin/common-masterpom</url>
   </scm>
   <developers>
