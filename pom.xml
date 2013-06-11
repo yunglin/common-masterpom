@@ -42,7 +42,7 @@
     <version.maven.changes>2.8</version.maven.changes>
     <version.maven.compiler>2.5.1</version.maven.compiler>
     <version.maven.cobertura>2.5.1</version.maven.cobertura>
-    <version.maven.enforcer>1.1.1</version.maven.enforcer>
+    <version.maven.enforcer>1.2</version.maven.enforcer>
     <version.maven.findbugs>2.5.2</version.maven.findbugs>
     <version.maven.javadoc>2.9</version.maven.javadoc>
     <version.maven.release>2.3.2</version.maven.release>
@@ -102,7 +102,7 @@
               <version>3.0.4</version>
             </requireMavenVersion>
             <requireJavaVersion>
-              <version>[1.6.0.35,)</version>
+              <version>[1.6.0-35,)</version>
             </requireJavaVersion>
           </rules>
         </configuration>
