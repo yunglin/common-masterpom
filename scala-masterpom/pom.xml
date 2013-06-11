@@ -6,7 +6,7 @@
   <packaging>pom</packaging>
   <name>scala-masterpom</name>
   <description>master pom for scala projects.</description>
-  <version>1.0.1</version>
+  <version>1.0.2-SNAPSHOT</version>
   <parent>
     <groupId>tw.hyl.common</groupId>
     <artifactId>masterpom</artifactId>
@@ -16,7 +16,7 @@
   <scm>
     <developerConnection>scm:git:git@github.com:yunglin/common-masterpom.git</developerConnection>
     <url>http://github.com/yunglin/common-masterpom</url>
-    <tag>scala-masterpom_2.9.3-1.0.1</tag>
+    <tag>HEAD</tag>
   </scm>
   <properties>
     <version.scala>2.9.3</version.scala>
