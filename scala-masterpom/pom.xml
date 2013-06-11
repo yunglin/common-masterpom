@@ -10,7 +10,7 @@
   <parent>
     <groupId>tw.hyl.common</groupId>
     <artifactId>masterpom</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
   <scm>
@@ -40,11 +40,8 @@
             <args>
                <arg>-encoding</arg>
                <arg>UTF-8</arg>
-               <arg>-target:jvm-1.6</arg>
                <arg>-deprecation</arg>
-               <arg>-feature</arg>
                <arg>-unchecked</arg>
-               <arg>-Ywarn-adapted-args</arg>
             </args>
           </configuration>
           <executions>
