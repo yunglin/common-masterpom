@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
   <modelVersion>4.0.0</modelVersion>
   <artifactId>scala-masterpom</artifactId>
@@ -15,50 +16,14 @@
   <properties>
     <version.scala>2.10.2</version.scala>
     <version.scala.lib>2.10</version.scala.lib>
-    <version.maven.scala>3.1.2</version.maven.scala>
+    <version.maven.scala>3.1.5</version.maven.scala>
     <version.maven.scalariform>0.1.2</version.maven.scalariform>
     <version.maven.scalastyle>0.2.0</version.maven.scalastyle>
     <version.scct>0.2-SNAPSHOT</version.scct>
   </properties>
   <build>
-    <sourceDirectory>src/main/scala</sourceDirectory>
-    <testSourceDirectory>src/test/scala</testSourceDirectory>
     <pluginManagement>
       <plugins>
-        <plugin>
-          <groupId>net.alchim31.maven</groupId>
-          <artifactId>scala-maven-plugin</artifactId>
-          <version>${version.maven.scala}</version>
-          <configuration>
-            <scalaVersion>${version.scala}</scalaVersion>
-            <args>
-               <arg>-encoding</arg>
-               <arg>UTF-8</arg>
-               <arg>-target:jvm-1.6</arg>
-               <arg>-deprecation</arg>
-               <arg>-feature</arg>
-               <arg>-unchecked</arg>
-               <arg>-Ywarn-adapted-args</arg>
-            </args>
-          </configuration>
-          <executions>
-            <execution>
-              <id>scala-compile</id>
-              <phase>process-resources</phase>
-              <goals>
-                <goal>add-source</goal>
-                <goal>compile</goal>
-              </goals>
-            </execution>
-            <execution>
-              <id>scala-test-compile</id>
-              <phase>process-test-resources</phase>
-              <goals>
-                <goal>testCompile</goal>
-              </goals>
-            </execution>
-          </executions>
-        </plugin>
         <plugin>
           <groupId>org.scalariform</groupId>
           <artifactId>scalariform-maven-plugin</artifactId>
@@ -85,22 +50,54 @@
     </pluginManagement>
     <plugins>
       <plugin>
-        <groupId>net.alchim31.maven</groupId>
-        <artifactId>scala-maven-plugin</artifactId>
-       <executions>
+         <groupId>net.alchim31.maven</groupId>
+         <artifactId>scala-maven-plugin</artifactId>
+         <version>${version.maven.scala}</version>
+         <configuration>
+           <scalaVersion>${version.scala}</scalaVersion>
+           <args>
+             <arg>-encoding</arg>
+             <arg>UTF-8</arg>
+             <arg>-target:jvm-1.6</arg>
+             <arg>-deprecation</arg>
+             <arg>-feature</arg>
+             <arg>-unchecked</arg>
+             <arg>-Ywarn-adapted-args</arg>
+           </args>
+           <jvmArgs>
+             <jvmArg>-Xms256m</jvmArg>
+             <jvmArg>-Xmx768m</jvmArg>
+           </jvmArgs>
+         </configuration>
+         <executions>
+           <execution>
+             <id>scala-compile</id>
+             <phase>process-resources</phase>
+             <goals>
+               <goal>add-source</goal>
+               <goal>compile</goal>
+             </goals>
+           </execution>
+           <execution>
+             <id>scala-test-compile</id>
+             <phase>process-test-resources</phase>
+             <goals>
+               <goal>testCompile</goal>
+             </goals>
+           </execution>
+         </executions>
+       </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <executions>
           <execution>
+            <phase>compile</phase>
             <goals>
               <goal>compile</goal>
-              <goal>testCompile</goal>
             </goals>
           </execution>
         </executions>
-        <configuration>
-          <jvmArgs>
-            <jvmArg>-Xms256m</jvmArg>
-            <jvmArg>-Xmx768m</jvmArg>
-          </jvmArgs>
-        </configuration>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -202,7 +199,7 @@
       <url>http://repo.typesafe.com/typesafe/releases</url>
     </repository>
     <repository>
-      <snapshots />
+      <snapshots/>
       <id>typesafe-snapshots</id>
       <name>typesafe-snapshots</name>
       <url>http://repo.typesafe.com/typesafe/snapshots</url>
