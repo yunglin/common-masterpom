@@ -9,13 +9,13 @@
   <parent>
     <groupId>tw.hyl.common</groupId>
     <artifactId>masterpom</artifactId>
-    <version>1.0.2-SNAPSHOT</version>
+    <version>1.0.2</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
   <scm>
     <developerConnection>scm:git:git@github.com:yunglin/common-masterpom.git</developerConnection>
     <url>http://github.com/yunglin/common-masterpom</url>
-    <tag>HEAD</tag>
+    <tag>scala-masterpom_2.9.3-1.0.2</tag>
   </scm>
   <properties>
     <version.scala>2.9.3</version.scala>
@@ -200,7 +200,7 @@
       <url>http://repo.typesafe.com/typesafe/releases</url>
     </repository>
     <repository>
-      <snapshots/>
+      <snapshots />
       <id>typesafe-snapshots</id>
       <name>typesafe-snapshots</name>
       <url>http://repo.typesafe.com/typesafe/snapshots</url>
