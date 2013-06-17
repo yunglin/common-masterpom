@@ -6,11 +6,10 @@
   <packaging>pom</packaging>
   <name>scala-masterpom</name>
   <description>master pom for scala projects.</description>
-  <version>1.0.2-SNAPSHOT</version>
   <parent>
     <groupId>tw.hyl.common</groupId>
     <artifactId>masterpom</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
   <scm>
@@ -21,47 +20,14 @@
   <properties>
     <version.scala>2.9.3</version.scala>
     <version.scala.lib>2.9.2</version.scala.lib>
-    <version.maven.scala>3.1.2</version.maven.scala>
+    <version.maven.scala>3.1.5</version.maven.scala>
     <version.maven.scalariform>0.1.2</version.maven.scalariform>
     <version.maven.scalastyle>0.2.0</version.maven.scalastyle>
     <version.scct>0.2-SNAPSHOT</version.scct>
   </properties>
   <build>
-    <sourceDirectory>src/main/scala</sourceDirectory>
-    <testSourceDirectory>src/test/scala</testSourceDirectory>
     <pluginManagement>
       <plugins>
-        <plugin>
-          <groupId>net.alchim31.maven</groupId>
-          <artifactId>scala-maven-plugin</artifactId>
-          <version>${version.maven.scala}</version>
-          <configuration>
-            <scalaVersion>${version.scala}</scalaVersion>
-            <args>
-               <arg>-encoding</arg>
-               <arg>UTF-8</arg>
-               <arg>-deprecation</arg>
-               <arg>-unchecked</arg>
-            </args>
-          </configuration>
-          <executions>
-            <execution>
-              <id>scala-compile</id>
-              <phase>process-resources</phase>
-              <goals>
-                <goal>add-source</goal>
-                <goal>compile</goal>
-              </goals>
-            </execution>
-            <execution>
-              <id>scala-test-compile</id>
-              <phase>process-test-resources</phase>
-              <goals>
-                <goal>testCompile</goal>
-              </goals>
-            </execution>
-          </executions>
-        </plugin>
         <plugin>
           <groupId>org.scalariform</groupId>
           <artifactId>scalariform-maven-plugin</artifactId>
@@ -88,22 +54,51 @@
     </pluginManagement>
     <plugins>
       <plugin>
-        <groupId>net.alchim31.maven</groupId>
-        <artifactId>scala-maven-plugin</artifactId>
-       <executions>
+         <groupId>net.alchim31.maven</groupId>
+         <artifactId>scala-maven-plugin</artifactId>
+         <version>${version.maven.scala}</version>
+         <configuration>
+           <scalaVersion>${version.scala}</scalaVersion>
+           <args>
+             <arg>-encoding</arg>
+             <arg>UTF-8</arg>
+             <arg>-deprecation</arg>
+             <arg>-unchecked</arg>
+           </args>
+           <jvmArgs>
+             <jvmArg>-Xms256m</jvmArg>
+             <jvmArg>-Xmx768m</jvmArg>
+           </jvmArgs>
+         </configuration>
+         <executions>
+           <execution>
+             <id>scala-compile</id>
+             <phase>process-resources</phase>
+             <goals>
+               <goal>add-source</goal>
+               <goal>compile</goal>
+             </goals>
+           </execution>
+           <execution>
+             <id>scala-test-compile</id>
+             <phase>process-test-resources</phase>
+             <goals>
+               <goal>testCompile</goal>
+             </goals>
+           </execution>
+         </executions>
+       </plugin>
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <executions>
           <execution>
+            <phase>compile</phase>
             <goals>
               <goal>compile</goal>
-              <goal>testCompile</goal>
             </goals>
           </execution>
         </executions>
-        <configuration>
-          <jvmArgs>
-            <jvmArg>-Xms256m</jvmArg>
-            <jvmArg>-Xmx768m</jvmArg>
-          </jvmArgs>
-        </configuration>
       </plugin>
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
@@ -205,7 +200,7 @@
       <url>http://repo.typesafe.com/typesafe/releases</url>
     </repository>
     <repository>
-      <snapshots />
+      <snapshots/>
       <id>typesafe-snapshots</id>
       <name>typesafe-snapshots</name>
       <url>http://repo.typesafe.com/typesafe/snapshots</url>
