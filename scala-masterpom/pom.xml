@@ -157,6 +157,10 @@
               <execution>
                 <id>scala-compile</id>
                 <configuration>
+                  <args>
+                    <args>-P:scct:projectId:${project.name}</args>
+                    <args>-P:scct:basedir:${project.basedir}</args>
+                  </args>
                   <compilerPlugins>
                     <compilerPlugin>
                       <groupId>reaktor</groupId>
@@ -186,6 +190,11 @@
         <artifactId>scala-maven-plugin</artifactId>
         <version>${version.maven.scala}</version>
       </plugin>
+      <plugin>
+        <groupId>reaktor.scct</groupId>
+        <artifactId>maven-scct-multiproject-report</artifactId>
+        <version>${version.scct}</version>
+      </plugin>
     </plugins>
   </reporting>
   <repositories>
@@ -204,5 +213,10 @@
       <url>http://repo.typesafe.com/typesafe/snapshots</url>
     </repository>
   </repositories>
-
+  <pluginRepositories>
+    <pluginRepository>
+      <id>scct-plugin-repo</id>
+      <url>http://mtkopone.github.com/scct/maven-repo</url>
+    </pluginRepository>
+  </pluginRepositories>
 </project>

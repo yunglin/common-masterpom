@@ -5,7 +5,7 @@
   <artifactId>buildtools</artifactId>
   <packaging>jar</packaging>
   <name>buildtools</name>
-  <description>build tools for aGalaxy projects.</description>
+  <description>build tools.</description>
   <parent>
     <groupId>tw.hyl.common</groupId>
     <artifactId>masterpom</artifactId>
