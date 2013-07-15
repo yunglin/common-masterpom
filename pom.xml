@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>tw.hyl.common</groupId>
   <artifactId>masterpom</artifactId>
-  <version>1.0.3-SNAPSHOT</version>
+  <version>1.0.3</version>
   <packaging>pom</packaging>
   <name>masterpom</name>
   <description>Common dependency versions and settings.</description>
@@ -15,7 +15,7 @@
   </parent>
 
   <prerequisites>
-    <maven>3.0.4</maven>
+    <maven>3.0.5</maven>
   </prerequisites>
   <modules>
     <module>buildtools</module>
@@ -24,7 +24,7 @@
   <scm>
     <developerConnection>scm:git:git@github.com:yunglin/common-masterpom.git</developerConnection>
     <url>http://github.com/yunglin/common-masterpom</url>
-    <tag>HEAD</tag>
+    <tag>masterpom-1.0.3</tag>
   </scm>
   <developers>
     <developer>
@@ -50,7 +50,7 @@
     <version.maven.site>3.2</version.maven.site>
     <version.maven.source>2.2</version.maven.source>
     <version.maven.surefire>2.12.3</version.maven.surefire>
-    <version.maven.wagon.ssh>2.2</version.maven.wagon.ssh>
+    <version.maven.wagon.ssh>2.4</version.maven.wagon.ssh>
     <version.slf4j>1.7.2</version.slf4j>
     <version.logback>1.0.9</version.logback>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -99,7 +99,7 @@
         <configuration>
           <rules>
             <requireMavenVersion>
-              <version>3.0.4</version>
+              <version>3.0.5</version>
             </requireMavenVersion>
             <requireJavaVersion>
               <version>[1.6.0-35,)</version>
