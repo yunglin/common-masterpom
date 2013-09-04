@@ -3,20 +3,20 @@
 
   <modelVersion>4.0.0</modelVersion>
   <artifactId>scala-masterpom_2.9.3</artifactId>
-  <version>1.0.3</version>
+  <version>1.0.4-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>scala-masterpom</name>
   <description>master pom for scala projects.</description>
   <parent>
     <groupId>tw.hyl.common</groupId>
     <artifactId>masterpom</artifactId>
-    <version>1.0.3</version>
+    <version>1.0.4-SNAPSHOT</version>
     <relativePath>../pom.xml</relativePath>
   </parent>
   <scm>
     <developerConnection>scm:git:git@github.com:yunglin/common-masterpom.git</developerConnection>
     <url>http://github.com/yunglin/common-masterpom</url>
-    <tag>scala-masterpom_2.9.3-1.0.3</tag>
+    <tag>HEAD</tag>
   </scm>
   <properties>
     <version.scala>2.9.3</version.scala>
