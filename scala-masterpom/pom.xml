@@ -16,7 +16,6 @@
   <scm>
     <developerConnection>scm:git:git@github.com:yunglin/common-masterpom.git</developerConnection>
     <url>http://github.com/yunglin/common-masterpom</url>
-    <tag>HEAD</tag>
   </scm>
   <properties>
     <version.scala>2.9.3</version.scala>
