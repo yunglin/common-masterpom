@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>tw.hyl.common</groupId>
   <artifactId>masterpom</artifactId>
-  <version>1.0.5-SNAPSHOT</version>
+  <version>1.1.0-SNAPSHOT</version>
   <packaging>pom</packaging>
   <name>masterpom</name>
   <description>Common dependency versions and settings.</description>
@@ -42,14 +42,15 @@
     <version.maven.changes>2.8</version.maven.changes>
     <version.maven.compiler>2.5.1</version.maven.compiler>
     <version.maven.cobertura>2.5.1</version.maven.cobertura>
-    <version.maven.enforcer>1.2</version.maven.enforcer>
+    <version.maven.enforcer>1.3</version.maven.enforcer>
     <version.maven.findbugs>2.5.2</version.maven.findbugs>
     <version.maven.javadoc>2.9</version.maven.javadoc>
     <version.maven.release>2.3.2</version.maven.release>
     <version.maven.resources>2.6</version.maven.resources>
-    <version.maven.site>3.2</version.maven.site>
+    <version.maven.report>2.7</version.maven.report>
+    <version.maven.site>3.3</version.maven.site>
     <version.maven.source>2.2</version.maven.source>
-    <version.maven.surefire>2.12.3</version.maven.surefire>
+    <version.maven.surefire>2.17</version.maven.surefire>
     <version.maven.wagon.ssh>2.4</version.maven.wagon.ssh>
     <version.slf4j>1.7.2</version.slf4j>
     <version.logback>1.0.9</version.logback>
@@ -197,6 +198,11 @@
               <version>${version.maven.wagon.ssh}</version>
             </dependency>
           </dependencies>
+        </plugin>
+        <plugin>
+          <groupId>org.apache.maven.plugins</groupId>
+          <artifactId>maven-project-info-reports-plugin</artifactId>
+          <version>${version.maven.report}</version>
         </plugin>
       </plugins>
     </pluginManagement>
