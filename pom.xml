@@ -45,7 +45,7 @@
     <version.maven.enforcer>1.2</version.maven.enforcer>
     <version.maven.findbugs>2.5.2</version.maven.findbugs>
     <version.maven.javadoc>2.9</version.maven.javadoc>
-    <version.maven.release>2.3.2</version.maven.release>
+    <version.maven.release>2.5</version.maven.release>
     <version.maven.resources>2.6</version.maven.resources>
     <version.maven.site>3.2</version.maven.site>
     <version.maven.source>2.2</version.maven.source>
