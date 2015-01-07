@@ -3,7 +3,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>scala-masterpom</artifactId>
+    <artifactId>scala-masterpom_${version.scala.lib}</artifactId>
     <packaging>pom</packaging>
     <name>scala-masterpom</name>
     <description>master pom for scala projects.</description>
