@@ -6,6 +6,14 @@
     <packaging>pom</packaging>
     <name>scala-masterpom</name>
     <description>master pom for scala projects.</description>
+    <licenses>
+      <license>
+        <name>Apache License, Version 2.0</name>
+        <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+        <distribution>repo</distribution>
+        <comments>A business-friendly OSS license</comments>
+      </license>
+    </licenses>
     <parent>
         <groupId>tw.hyl.common</groupId>
         <artifactId>masterpom</artifactId>
@@ -13,7 +21,7 @@
         <relativePath>../pom.xml</relativePath>
     </parent>
     <properties>
-        <version.scala>2.11.5</version.scala>
+        <version.scala>2.11.7</version.scala>
         <version.scala.lib>2.11</version.scala.lib>
         <version.maven.scala>3.1.6</version.maven.scala>
         <version.maven.scalariform>0.1.2</version.maven.scalariform>

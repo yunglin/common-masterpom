@@ -6,6 +6,14 @@
   <packaging>jar</packaging>
   <name>buildtools</name>
   <description>build tools.</description>
+  <licenses>
+    <license>
+      <name>Apache License, Version 2.0</name>
+      <url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      <distribution>repo</distribution>
+      <comments>A business-friendly OSS license</comments>
+    </license>
+  </licenses>
   <parent>
     <groupId>tw.hyl.common</groupId>
     <artifactId>masterpom</artifactId>
