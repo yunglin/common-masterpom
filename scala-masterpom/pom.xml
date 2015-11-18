@@ -4,7 +4,7 @@
     <modelVersion>4.0.0</modelVersion>
     <artifactId>scala-masterpom_2.10</artifactId>
     <packaging>pom</packaging>
-    <version>1.1.2-SNAPSHOT</version>
+    <version>1.1.2</version>
     <name>scala-masterpom</name>
     <description>master pom for scala projects.</description>
     <licenses>
@@ -24,7 +24,8 @@
     <scm>
       <developerConnection>scm:git:git@github.com:yunglin/common-masterpom.git</developerConnection>
       <url>http://github.com/yunglin/common-masterpom</url>
-    </scm>
+      <tag>scala-masterpom_2.10-1.1.2</tag>
+  </scm>
     <properties>
         <version.scala>2.10.6</version.scala>
         <version.scala.lib>2.10</version.scala.lib>
