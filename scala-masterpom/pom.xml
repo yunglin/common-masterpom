@@ -21,6 +21,10 @@
         <version>1.1.2</version>
         <relativePath>../pom.xml</relativePath>
     </parent>
+    <scm>
+      <developerConnection>scm:git:git@github.com:yunglin/common-masterpom.git</developerConnection>
+      <url>http://github.com/yunglin/common-masterpom</url>
+    </scm>
     <properties>
         <version.scala>2.10.6</version.scala>
         <version.scala.lib>2.10</version.scala.lib>
