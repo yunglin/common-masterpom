@@ -190,7 +190,7 @@
             </plugin>
             <plugin>
                 <groupId>org.scoverage</groupId>
-                <artifactId>maven-scoverage-plugin</artifactId>
+                <artifactId>scoverage-maven-plugin</artifactId>
                 <version>${version.maven.scoverage}</version>
             </plugin>
         </plugins>
